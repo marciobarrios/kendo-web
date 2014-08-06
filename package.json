@@ -1,0 +1,13 @@
+{
+  "name": "kendo",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-svg-sprites": "^1.0.0"
+  }
+}

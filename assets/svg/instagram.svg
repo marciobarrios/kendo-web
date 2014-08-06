@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.0.4 (8156) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="_output/V2/Home_web" sketch:type="MSArtboardGroup" transform="translate(-112.000000, -5680.000000)" fill="#1A2021">
+            <g id="Contact" sketch:type="MSLayerGroup" transform="translate(-23.000000, 4576.000000)">
+                <g id="Form" transform="translate(0.000000, 352.000000)" sketch:type="MSShapeGroup">
+                    <g id="campo-4" transform="translate(0.000000, 96.000000)">
+                        <g id="social" transform="translate(0.000000, 615.000000)">
+                            <g id="icons" transform="translate(135.000000, 41.000000)">
+                                <g id="Imported-Layers">
+                                    <path d="M21,10 L19.11,10 C19.265,10 19.355,11.083 19.355,11.721 C19.355,15.789 16.054,19.025 11.98,19.025 C7.909,19.025 4.609,15.82 4.609,11.752 C4.609,11.114 4.7,10 4.851,10 L3,10 L3,19.887 C3,20.393 3.177,21 3.688,21 L20.272,21 C20.784,21 21,20.393 21,19.887 L21,10 L21,10 Z M21,3.298 C21,2.791 20.784,2 20.272,2 L17.512,2 C17.001,2 17,2.791 17,3.298 L17,6.063 C17,6.574 17.001,7 17.512,7 L20.272,7 C20.784,7 21,6.574 21,6.063 L21,3.298 L21,3.298 Z M11.98,6.986 C9.435,6.986 7.372,9.049 7.372,11.595 C7.372,14.135 9.435,16.202 11.98,16.202 C14.526,16.202 16.589,14.135 16.589,11.595 C16.589,9.049 14.526,6.986 11.98,6.986 L11.98,6.986 Z M21,24 L2.765,24 C1.239,24 0,22.334 0,20.806 L0,2.379 C0,0.851 1.239,0 2.765,0 L21.196,0 C22.725,0 24,0.851 24,2.379 L24,20.806 C24,22.334 22.725,24 21.196,24 L21,24 Z" id="Fill-1"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

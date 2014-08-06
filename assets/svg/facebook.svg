@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="23px" viewBox="0 0 11 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.0.4 (8156) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="_output/V2/Home_web" sketch:type="MSArtboardGroup" transform="translate(-222.000000, -5680.000000)" fill="#1A2021">
+            <g id="Contact" sketch:type="MSLayerGroup" transform="translate(-23.000000, 4576.000000)">
+                <g id="Form" transform="translate(0.000000, 352.000000)" sketch:type="MSShapeGroup">
+                    <g id="campo-4" transform="translate(0.000000, 96.000000)">
+                        <g id="social" transform="translate(0.000000, 615.000000)">
+                            <g id="icons" transform="translate(135.000000, 41.000000)">
+                                <path d="M117,5.524 L117,5.132 C117,4.168 117.682,3.823 118.647,3.823 C119.611,3.823 120.555,4.124 120.555,4.124 L121.13,0.446 C121.13,0.446 119.787,0 116.658,0 C114.737,0 113.618,0.73 112.805,1.805 C112.032,2.822 112,4.462 112,5.524 L112,7.776 L110,7.776 L110,11.776 L112,11.776 L112,23.776 L117,23.776 L117,11.776 L120.318,11.776 L120.592,7.776 L117,7.776 L117,5.524" id="Imported-Layers"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

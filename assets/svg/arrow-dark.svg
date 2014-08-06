@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="11px" viewBox="0 0 27 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.0.4 (8156) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 26</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="_output/V2/Home_mobile" sketch:type="MSArtboardGroup" transform="translate(-238.000000, -1679.000000)" fill="#1A2021" opacity="0.5">
+            <g id="btn" sketch:type="MSLayerGroup" transform="translate(33.445407, 1656.076923)">
+                <path d="M229.849305,28.8235294 L205,28.8235294 L205,28.1764706 L229.878592,28.1764706 L225.126919,23.8425385 C224.996744,23.723808 224.996744,23.5313078 225.126919,23.4125773 C225.257094,23.2938468 225.468149,23.2938468 225.598323,23.4125773 L230.925769,28.2716629 L231.161471,28.4866435 L230.925769,28.7016241 L225.569036,33.5874227 C225.438861,33.7061532 225.227806,33.7061532 225.097631,33.5874227 C224.967456,33.4686922 224.967456,33.276192 225.097631,33.1574615 L229.849305,28.8235294 Z M230.333333,28.5912331 L230.333333,28.3820538 L230.454365,28.2716629 L230.454365,28.7016241 L230.333333,28.5912331 Z" id="Rectangle-26" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
