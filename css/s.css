@@ -402,6 +402,9 @@ html {
   }
 
   /* Form contact */
+  .home-contact h2 {
+    max-width: 7em;
+  }
   .contact-form-half {
     width: 49%;
     margin-top: 2%;
@@ -427,7 +430,7 @@ html {
 @media (min-width: 1440px) {
   /* Work */
   .home-work h2 {
-    max-width: 70rem;
+    max-width: 10em;
   }
 
   /* Process */
@@ -453,6 +456,11 @@ html {
   .home-process-step:before {
     left: 0;
     top: 3.3em;
+  }
+
+  /* Form contact */
+  .contact-form {
+    max-width: 25em;
   }
 }
 

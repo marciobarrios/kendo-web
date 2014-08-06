@@ -462,6 +462,11 @@ html {
     left: 0;
     top: 3.3em;
   }
+
+  /* Form contact */
+  .contact-form {
+    max-width: 25em;
+  }
 }
 
 
