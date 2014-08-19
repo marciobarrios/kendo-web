@@ -88,13 +88,14 @@ html {
     background: rgb(27,31,38);
     color: rgba(255,255,255,.5);
     height: 100%;
+    padding: 2em 1.2em;
   }
     /* 1-2-3. A clever technique to vertical align elements, using top and transform. */
     .header-inner {
       position: relative; /* 1 */
       top: 50%; /* 2 */
       transform: translateY(-50%); /* 3 */
-      padding: 2em 1em;
+      max-width: 45rem;
     }
       h1 {
         font-family: 'Maison Neue Demi', sans-serif;
@@ -119,8 +120,12 @@ html {
     }
 
   section {
-    padding: 4em 1em;
+    padding: 4em 1.2em;
   }
+    .section-inner {
+      max-width: 50rem;
+    }
+
 
   footer {
     padding: 1em;
@@ -169,6 +174,7 @@ html {
     color: white;
     background: rgb(27,31,38);
     padding: 1em 6em;
+    cursor: pointer;
   }
 
   /* Placeholder styles */
@@ -207,6 +213,7 @@ html {
     border: 1px solid rgba(38,41,41,.1);
     transition: .25s;
     margin-top: 2em;
+    max-width: 25rem;
   }
   .bt:hover {
     border-color: rgba(38,41,41,.3);
@@ -249,6 +256,7 @@ html {
     position: relative;
     font-size: 2rem;
     margin-left: 4em;
+    max-width: 90rem;
   }
   .home-process-steps:before {
     content: "";
@@ -360,19 +368,16 @@ html {
     width: auto;
   }
 
-  .header-inner,
+  header,
   section,
   footer {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  .header-inner {
+  header {
     padding: 3em;
   }
-    .header-inner p {
-      max-width: 45rem;
-    }
     h1 {
       font-size: 72px;
       font-size: 7.2rem;
@@ -388,6 +393,10 @@ html {
       margin-bottom: .4em;
     }
 
+  .home-work .section-inner {
+    max-width: 75rem;
+  }
+
   .bt {
     display: inline-block;
     font-size: 20px;
@@ -400,11 +409,34 @@ html {
     font-size: 24px;
     font-size: 2.4rem;
   }
+    .home-process-steps {
+      margin: 4em 0 0;
+    }
+    .home-process-steps:before {
+      top: 4em;
+      left: 0;
+      right: -100em;
+      width: auto;
+      height: 1px;
+    }
+    .home-process-steps ul {
+      margin-top: 5em;
+    }
+    .home-process-step {
+      position: relative;
+      float: left;
+      width: 24%;
+      margin: 0;
+    }
+    .home-process-step + .home-process-step {
+      margin-left: 1%;
+    }
+    .home-process-step:before {
+      left: 0;
+      top: 3.3em;
+    }
 
   /* Form contact */
-  .home-contact h2 {
-    max-width: 7em;
-  }
   .contact-form-half {
     width: 49%;
     margin-top: 2%;
@@ -428,40 +460,6 @@ html {
 }
 
 @media (min-width: 1440px) {
-  /* Work */
-  .home-work h2 {
-    max-width: 10em;
-  }
-
-  /* Process */
-  .home-process-steps {
-    margin: 4em 0 0;
-  }
-  .home-process-steps:before {
-    top: 4em;
-    left: 0;
-    right: -10em;
-    width: auto;
-    height: 1px;
-  }
-  .home-process-steps ul {
-    margin-top: 5em;
-  }
-  .home-process-step {
-    position: relative;
-    float: left;
-    width: 12em;
-    margin: 0;
-  }
-  .home-process-step:before {
-    left: 0;
-    top: 3.3em;
-  }
-
-  /* Form contact */
-  .contact-form {
-    max-width: 25em;
-  }
 }
 
 

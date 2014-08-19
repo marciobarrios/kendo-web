@@ -26,16 +26,19 @@
     </header>
 
     <section class="home-work">
-      <h2>Discover on what we're working on right now</h2>
-      <p>Check in Dribbble our work...</p>
-      <a href="#" class="bt">View <i class="icon arrow-dark"></i></a>
-      <img src="">
+      <div class="section-inner">
+        <h2>Discover on what we're working on right now</h2>
+        <p>Check in Dribbble our work...</p>
+        <a href="#" class="bt">View <i class="icon arrow-dark"></i></a>
+        <img src="">
+      </div>
     </section>
 
     <section class="home-process home-dark">
-      <h2>The process.</h2>
-      <p>Each step of the way matters to achieve great results.</p>
-
+      <div class="section-inner">
+        <h2>The process.</h2>
+        <p>Each step of the way matters to achieve great results.</p>
+      </div>
       <ol class="home-process-steps unstyled">
         <li class="home-process-step">
           <h3>Kick off</h3>
@@ -73,51 +76,55 @@
     </section>
 
     <section class="home-blog home-dark">
-      <h2>Blog.</h2>
+      <div class="section-inner">
+        <h2>Blog.</h2>
 
-      <ul class="unstyled">
-        <li class="home-blog-entry">
-          <time class="block">May 14, 2014</time>
-          <a href="#" class="home-blog-entry-title">Fever: The app that maps out Madrid and New York nightlife</a>
-          <p>We are basically the point where social networks meet entertainment and content.</p>
-        </li>
-        <li class="home-blog-entry">
-          <time class="block">May 14, 2014</time>
-          <a href="#" class="home-blog-entry-title">3 simple steps to become a better designer</a>
-          <p>All designers get stuck – especially in the beginning of their career.</p>
-        </li>
-        <li class="home-blog-entry">
-          <time class="block">May 14, 2014</time>
-          <a href="#" class="home-blog-entry-title">Tips and Tools of Color Schemes Usage For Web Developers</a>
-          <p>I have often witnessed an extraordinary design.</p>
-        </li>
-      </ul>
+        <ul class="unstyled">
+          <li class="home-blog-entry">
+            <time class="block">May 14, 2014</time>
+            <a href="#" class="home-blog-entry-title">Fever: The app that maps out Madrid and New York nightlife</a>
+            <p>We are basically the point where social networks meet entertainment and content.</p>
+          </li>
+          <li class="home-blog-entry">
+            <time class="block">May 14, 2014</time>
+            <a href="#" class="home-blog-entry-title">3 simple steps to become a better designer</a>
+            <p>All designers get stuck – especially in the beginning of their career.</p>
+          </li>
+          <li class="home-blog-entry">
+            <time class="block">May 14, 2014</time>
+            <a href="#" class="home-blog-entry-title">Tips and Tools of Color Schemes Usage For Web Developers</a>
+            <p>I have often witnessed an extraordinary design.</p>
+          </li>
+        </ul>
 
-      <a href="#" class="bt bt-light">Read more <i class="icon arrow-light"></i></a>
+        <a href="#" class="bt bt-light">Read more <i class="icon arrow-light"></i></a>
+      </div>
     </section>
 
     <section class="home-contact">
-      <h2>Let’s Work Together</h2>
-      <p>Get Started Here</p>
+      <div class="section-inner">
+        <h2>Let’s Work Together</h2>
+        <p>Get Started Here</p>
 
-      <form action="index.html" method="post" class="contact-form">
-        <div class="cf">
-          <input type="text" name="name" placeholder="Full name" class="contact-form-half" required>
-          <input type="email" name="email" placeholder="Email address" class="contact-form-half" required>
-          <div class="contact-form-all select-wrapper">
-            <select name="timeline">
-              <option value="1">1 Month</option>
-              <option value="1-3">1-3 Months</option>
-              <option value="3+">More than 3 months</option>
-            </select>
-            <i class="icon arrow-select"></i>
+        <form action="index.html" method="post" class="contact-form">
+          <div class="cf">
+            <input type="text" name="name" placeholder="name" class="contact-form-half" required>
+            <input type="email" name="email" placeholder="Email" class="contact-form-half" required>
+            <div class="contact-form-all select-wrapper">
+              <select name="timeline">
+                <option value="1 Month">1 Month</option>
+                <option value="1-3 Months">1-3 Months</option>
+                <option value="More than 3 months">More than 3 months</option>
+              </select>
+              <i class="icon arrow-select"></i>
+            </div>
+
+            <textarea name="description" rows="8" cols="30" placeholder="Tell me about your project briefly." class="contact-form-all" required></textarea>
           </div>
-
-          <textarea name="description" rows="8" cols="30" placeholder="Tell me about your project briefly." class="contact-form-all"></textarea>
-        </div>
-        <span class="contact-form-availability block">Availability: <strong>Limited</strong></span>
-        <button type="submit" class="right">Send</button>
-      </form>
+          <span class="contact-form-availability block">Availability: <strong>Limited</strong></span>
+          <button type="submit" class="right">Send</button>
+        </form>
+      </div>
     </section>
 
     <footer>
@@ -139,7 +146,7 @@
     </script>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/s.js"></script>
 
   </body>

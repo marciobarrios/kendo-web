@@ -16,7 +16,7 @@ var paths = {
   images:  ['img/*'],
   scripts: ['js/*'],
   extras:  ['humans.txt', 'favicon.ico']
-}
+};
 
 
 // TASKS -----------------------------------
@@ -44,7 +44,7 @@ var pathsAll = paths.html
 
 gulp.task('copy', ['clean'], function() {
   return gulp.src(pathsAll, {cwd: './**'})
-    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(dest));
 });
 
 // SVG sprites
