@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------------------
-  Styles for kendo.com, by @marciobarrios
+  Styles for kendostudio.com, by @marciobarrios
 
    _       __     __                                 __          __     __
   | |     / /__  / /________  ____ ___  ___     ____/ /_  ______/ /__  / /
@@ -26,11 +26,19 @@
 
   If you are wondering why to use "box-sizing" property, read this: http://cl.ly/K1kT
 */
+
 * { padding: 0; margin: 0; box-sizing: border-box; }
+h1, h2, h3, h4 { font-weight: normal; }
+a { text-decoration: none; }
+
+
+
+
 
 /*
   Fonts
  */
+
 @font-face {
   font-family: 'Maison Neue Book';
   src: url('../fonts/MaisonNeueBook.eot'); /* IE9 Compat Modes */
@@ -56,6 +64,9 @@
 }
 
 
+
+
+
 /*
   General styles
 
@@ -63,6 +74,7 @@
   2. Controls how the browser renders text (more info: http://cl.ly/K1pT)
   3. Prevents zoom on mobile browsers, use it carefully (http://cl.ly/K1to, http://cl.ly/K9Xo)
  */
+
 html {
   font: 62.5%/1.4 "Maison Neue Book", helvetica, sans-serif; /* 1 */
   -webkit-font-smoothing: antialiased; /* 2 */
@@ -81,8 +93,6 @@ html {
   body {
     height: 100%; /* 1 */
   }
-
-  a { text-decoration: none; }
 
   header {
     background: rgb(27,31,38);
@@ -113,17 +123,17 @@ html {
 
     h2 {
       color: rgb(43,46,46);
-      line-height: 1.2;
-      margin-bottom: 1em;
+      line-height: 1.1;
+      margin-bottom: .5em;
       font-size: 40px;
       font-size: 4rem;
     }
 
   section {
-    padding: 4em 1.2em;
+    padding: 5em 1.2em;
   }
     .section-inner {
-      max-width: 50rem;
+      max-width: 60rem;
     }
 
 
@@ -141,11 +151,12 @@ html {
         opacity: .25;
       }
 
+
   /* Form elements */
   input, textarea, select, button {
     -webkit-appearance: none;
     font-family: "Maison Neue Book", helvetica, sans-serif;
-    padding: 1em;
+    padding: 1.5em 1em;
     border: none;
     font-size: 18px;
     font-size: 1.8rem;
@@ -154,6 +165,9 @@ html {
     background: rgb(223,225,227);
     color: rgb(27,31,38);
     border-radius: 0;
+  }
+  textarea {
+    line-height: 1.5;
   }
   .select-wrapper {
     position: relative;
@@ -173,9 +187,10 @@ html {
     width: 100%;
     color: white;
     background: rgb(27,31,38);
-    padding: 1em 6em;
+    padding: 1.3em 6em;
     cursor: pointer;
   }
+
 
   /* Placeholder styles */
   ::-webkit-input-placeholder {
@@ -194,6 +209,7 @@ html {
     color: rgba(27,31,38,.7);
   }
 
+
   /* Some overrides inside dark sections */
   .home-dark {
     color: rgba(255,255,255,.5);
@@ -202,18 +218,18 @@ html {
       color: white;
     }
 
+
   /* Button */
   .bt {
     position: relative;
     display: block;
     font-size: 18px;
     font-size: 1.8rem;
-    padding: .5em 1em;
+    padding: .85em 1.2em;
     color: rgb(38,41,41);
     border: 1px solid rgba(38,41,41,.1);
     transition: .25s;
     margin-top: 2em;
-    max-width: 25rem;
   }
   .bt:hover {
     border-color: rgba(38,41,41,.3);
@@ -232,9 +248,9 @@ html {
       transform: translateY(-50%);
       transition: .25s;
     }
-    .bt:hover i {
-      right: 1em;
-    }
+
+
+
 
 
 /*
@@ -245,6 +261,7 @@ html {
 
 /* Work */
 .home-work {}
+
 
 /* Process */
 .home-process {
@@ -297,6 +314,7 @@ html {
       margin-top: 2em;
     }
 
+
 /* Blog */
 .home-blog {
   background: rgb(27,31,38);
@@ -305,28 +323,33 @@ html {
     margin-top: 4em;
   }
   .home-blog-entry {
+    position: relative;
     padding-bottom: 3em;
     margin-bottom: 3em;
-    border-bottom: 1px solid rgba(255,255,255,.05);
   }
+
+  .home-blog-entry:after {
+    content: "";
+    position: absolute;
+    right: -100em;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: rgba(255,255,255,.05);
+  }
+
   .home-blog-entry-title {
     display: block;
     margin: 2em 0 1em;
     color: white;
   }
 
+
 /* Form contact */
 .contact-form {
-  margin-top: 2em;
+  margin-top: 4em;
 }
-  .contact-form-half {
-    float: left;
-    width: 48%;
-    margin-top: 4%;
-  }
-  .contact-form-half + .contact-form-half {
-    margin-left: 4%;
-  }
+  .contact-form-half,
   .contact-form-all {
     float: left;
     width: 100%;
@@ -336,13 +359,60 @@ html {
     margin-bottom: 4%;
   }
   .contact-form-availability {
-    margin: .5em 0 4em;
+    margin: .5em 0 5em;
     font-size: 18px;
     font-size: 1.8rem;
   }
     .contact-form-availability strong {
       color: rgb(42,46,46);
     }
+
+.icon.form {
+  display: none;
+}
+
+
+
+
+/*
+  Utilities
+
+  Generic classes to reuse across the site
+ */
+
+.unstyled {
+  list-style: none;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none !important;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
 
 /*
   Media Queries
@@ -351,8 +421,9 @@ html {
   getting bigger, so we don't overload the small devices with unused CSS.
 
   I only target 2 breakpoints:
-  one for tablet (769px and up) and one for desktop (1440px and up)
+  one for middle screens and up (769px) and one for large screens and up (1024px)
  */
+
 @media (min-width: 769px) {
   body {
     font-size: 24px;
@@ -363,9 +434,11 @@ html {
     font-size: 20px;
     font-size: 2rem;
   }
+
   button {
     float: right;
     width: auto;
+    padding: 1.5em 6.25em;
   }
 
   header,
@@ -390,11 +463,15 @@ html {
     h2 {
       font-size: 72px;
       font-size: 7.2rem;
-      margin-bottom: .4em;
+      margin-bottom: .3em;
     }
 
   .home-work .section-inner {
     max-width: 75rem;
+  }
+
+  .home-contact .section-inner {
+    max-width: 55rem;
   }
 
   .bt {
@@ -402,6 +479,7 @@ html {
     font-size: 20px;
     font-size: 2rem;
     padding-right: 6em;
+    width: 25rem;
   }
 
   /* Home process */
@@ -437,6 +515,10 @@ html {
     }
 
   /* Form contact */
+  .contact-form {
+    position: relative;
+    margin-top: 5em;
+  }
   .contact-form-half {
     width: 49%;
     margin-top: 2%;
@@ -456,39 +538,22 @@ html {
     float: left;
     font-size: 20px;
     font-size: 2rem;
+    margin-top: 1.1em;
+  }
+  .shapes {
+    position: absolute;
+    top: -5rem;
+    left: 85rem;
+    opacity: .5;
   }
 }
 
-@media (min-width: 1440px) {
-}
 
 
-/*
-  Utilities
 
-  Generic classes to reuse across the site
- */
-.unstyled {
-  list-style: none;
-}
-.block {
-  display: block;
-}
-.hide {
-  display: none !important;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
 
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
+@media (min-width: 1024px) {
+  .section-inner {
+    max-width: 75rem;
+  }
 }

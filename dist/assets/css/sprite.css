@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 27.3em 72.5em;
+    background-size: 27.3em 73.6em;
 }
 
 .no-svg .icon:before {
@@ -17,43 +17,43 @@
 
 .arrow-dark:before {
     background-position: 0em 0em;
-    width: 2.7em;
-    height: 1.1em;
+    width: 4em;
+    height: 1.7em;
 }
 
 .arrow-light:before {
-    background-position: 0em -1.1em;
-    width: 3.9em;
-    height: 1.6em;
+    background-position: 0em -1.7em;
+    width: 4em;
+    height: 1.7em;
 }
 
 .arrow-select:before {
-    background-position: 0em -2.7em;
+    background-position: 0em -3.4em;
     width: 1.6em;
-    height: 0.9em;
+    height: 1em;
 }
 
 .facebook:before {
-    background-position: 0em -3.6em;
-    width: 1.1em;
-    height: 2.3em;
+    background-position: 0em -4.4em;
+    width: 1.2em;
+    height: 2.4em;
 }
 
-.form:before {
-    background-position: 0em -5.9em;
+.instagram:before {
+    background-position: 0em -6.8em;
+    width: 2.4em;
+    height: 2.4em;
+}
+
+.shapes:before {
+    background-position: 0em -9.2em;
     width: 27.3em;
     height: 62em;
 }
 
-.instagram:before {
-    background-position: 0em -67.9em;
-    width: 2.3em;
-    height: 2.3em;
-}
-
 .twitter:before {
-    background-position: 0em -70.2em;
-    width: 2.9em;
-    height: 2.3em;
+    background-position: 0em -71.2em;
+    width: 3em;
+    height: 2.4em;
 }
 

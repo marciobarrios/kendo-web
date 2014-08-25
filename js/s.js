@@ -10,6 +10,9 @@ if (!supportsSVG()) {
 }
 
 
+
+
+
 /**
  * Mandrill API to send mails
  *
@@ -47,4 +50,29 @@ if (!supportsSVG()) {
        console.log(response);
      });
   });
+})(window, jQuery);
+
+
+
+
+
+/**
+ * Dribbble API call to get Kendo shots
+ *
+ */
+
+(function(w, $, undefined){
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.dribbble.com/players/kendo/shots/',
+    dataType: 'jsonp',
+    success: function (data) {
+      if (typeof (data) === 'undefined') {
+        // show sample image?
+      }
+      else {
+        console.log(data);
+      }
+    }
+});
 })(window, jQuery);

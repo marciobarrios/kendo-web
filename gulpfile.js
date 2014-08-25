@@ -20,7 +20,7 @@ var paths = {
 
 
 // TASKS -----------------------------------
-// TODO: gulp-svgmin, gulp-svg-sprites, gulp-svg2png
+// TODO: gulp-svg2png
 
 // Delete /dist folder
 gulp.task('clean', function() {
