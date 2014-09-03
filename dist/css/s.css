@@ -63,6 +63,20 @@ a { text-decoration: none; }
   font-weight:  400;
 }
 
+@font-face {
+  font-family: 'MinionPro-It';
+  src: url('../fonts/MinionPro-It.eot');
+  src: url('../fonts/MinionPro-It.eot?') format('eot'),
+       url('../fonts/MinionPro-It.otf')  format('opentype'),
+       url('../fonts/MinionPro-It.woff') format('woff'),
+       url('../fonts/MinionPro-It.ttf')  format('truetype'),
+       url('../fonts/MinionPro-It.svg#MinionPro-It') format('svg');
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
 
 
 
@@ -94,6 +108,8 @@ html {
     height: 100%; /* 1 */
   }
 
+  h1, h2, h3, h4 { font-family: "Maison Neue Demi", sans-serif; }
+
   header {
     background: rgb(27,31,38);
     color: rgba(255,255,255,.5);
@@ -110,16 +126,16 @@ html {
       max-width: 45rem;
     }
       h1 {
-        font-family: 'Maison Neue Demi', sans-serif;
         font-size: 40px;
         font-size: 4rem;
         margin-bottom: .7em;
         color: white;
       }
         h1 em {
-          font-family: Lucida Grande, sans-serif;
-          font-size: 20px;
-          font-size: 2rem;
+          font-family: "MinionPro-It", serif;
+          font-style: normal;
+          font-size: 35px;
+          font-size: 3.5rem;
           color: rgba(255,255,255,.5);
         }
 
@@ -133,6 +149,7 @@ html {
 
   section {
     padding: 5em 1.2em;
+    overflow: hidden; /* because of bottom lines in blog section */
   }
     .section-inner {
       max-width: 60rem;
@@ -187,13 +204,17 @@ html {
     }
 
   button {
+    position: relative;
     display: block;
     width: 100%;
     color: white;
     background: rgb(27,31,38);
-    padding: 1.3em 6em;
+    padding: 1.3em;
     cursor: pointer;
   }
+    .spinner {
+      display: none;
+    }
 
 
   /* Placeholder styles */
@@ -375,7 +396,7 @@ html {
       color: rgb(42,46,46);
     }
 
-.icon.form {
+.shapes {
   display: none;
 }
 
@@ -446,7 +467,9 @@ html {
   button {
     float: right;
     width: auto;
-    padding: 1.5em 6.25em;
+    padding: 1.5em;
+    width: 264px;
+    width: 26.4rem;
   }
 
   header,
@@ -549,6 +572,7 @@ html {
     margin-top: 1.1em;
   }
   .shapes {
+    display: block;
     position: absolute;
     top: -5rem;
     left: 85rem;
@@ -564,4 +588,61 @@ html {
   .section-inner {
     max-width: 75rem;
   }
+}
+
+
+
+
+
+/*
+  Spinner animation
+ */
+ .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 30px;
+  margin: -15px 0 0 -25px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+          animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(.4); transform: scaleY(.4) }
+  20%           { -webkit-transform: scaleY(1); transform: scaleY(1)  }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(.4); transform: scaleY(.4) }
+  20%           { -webkit-transform: scaleY(1); transform: scaleY(1)  }
 }
