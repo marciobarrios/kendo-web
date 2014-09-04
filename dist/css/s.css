@@ -8,9 +8,9 @@
   |__/|__/\___/_/\___/\____/_/ /_/ /_/\___/   \__,_/\__,_/\__,_/\___(_)
 
 
-  These styles are not minimized because I love to learn and I inspected
+  These styles are not minimized because we all love to learn and I inspected
   lots of CSS from many sites, so it's fair to let you steal/copy/learn,
-  in fact I commented and clarified this css to help you :)
+  in fact I commented and clarified this CSS to help you :)
 
   I'm using a mobile first approach, so I style a very basic version of the site
   and with media queries I add styles to improve the experience for bigger screens.
@@ -134,8 +134,8 @@ html {
         h1 em {
           font-family: "MinionPro-It", serif;
           font-style: normal;
-          font-size: 35px;
-          font-size: 3.5rem;
+          font-size: 24px;
+          font-size: 2.4rem;
           color: rgba(255,255,255,.5);
         }
 
@@ -172,8 +172,9 @@ html {
 
 
   /* Form elements */
+  /* 1. This property tells the webkit browsers to reset the visual style */
   input, textarea, select, button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* 1 */
     font-family: "Maison Neue Book", helvetica, sans-serif;
     padding: 1.5em 1em;
     border: none;
@@ -194,13 +195,15 @@ html {
     .select-wrapper select {
       width: 100%;
     }
+    /* 1. This is a way to center vertically in CSS, read more about this
+          topic: http://cl.ly/XMh5, http://cl.ly/XMef */
     .arrow-select {
       position: absolute;
       right: 2em;
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+              transform: translateY(-50%); /* 1 */
     }
 
   button {
@@ -291,6 +294,18 @@ html {
 /* Work */
 .home-work {}
 
+  .work-collage {
+      list-style: none;
+      margin-top: 3em;
+    }
+    .work-collage li {
+      margin: 1em 0 0;
+    }
+    .work-collage img {
+      width: 530px;
+      height: 530px;
+    }
+
 
 /* Process */
 .home-process {
@@ -316,6 +331,7 @@ html {
     .home-process-step {
       margin-top: 4em;
     }
+    /* I use pseudoelements here to generate the different circles */
     .home-process-step:before {
       content: "";
       position: absolute;
@@ -488,8 +504,8 @@ html {
       margin-bottom: .2em;
     }
       h1 em {
-        font-size: 24px;
-        font-size: 2.4rem;
+        font-size: 35px;
+        font-size: 3.5rem;
       }
     h2 {
       font-size: 72px;
@@ -590,6 +606,20 @@ html {
   }
 }
 
+
+
+
+
+/* To show the collage work in 2 lines */
+@media (min-width: 1080px) {
+  .work-collage {
+    margin-left: -1em;
+  }
+  .work-collage li {
+    float: left;
+    margin: 1em 0 0 1em;
+  }
+}
 
 
 

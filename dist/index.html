@@ -4,18 +4,38 @@
     <meta charset="utf-8">
     <title>Kendo.</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="We design simple and delightful products for startups and big companies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="author" href="humans.txt">
 
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable"          content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title"            content="Kendo">
+    <link rel="apple-touch-icon-precomposed"     href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57"   href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72"   href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60"   href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76"   href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png"   sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png"   sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png"   sizes="32x32">
+
     <link rel="stylesheet" href="assets/css/sprite.css">
     <link rel="stylesheet" href="css/s.css">
-
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <header>
@@ -27,11 +47,17 @@
 
     <section class="home-work">
       <div class="section-inner">
-        <h2>Discover what we're working on now</h2>
-        <p>Check in Dribbble our work...</p>
-        <a href="#" class="bt">View More <i class="icon arrow-dark"></i></a>
-        <img src="">
+        <h2>What we do.</h2>
+        <p>Discover what we're working on right now.</p>
       </div>
+      <ul class="work-collage cf">
+        <li><a href="https://dribbble.com/kendo"><img src="assets/work/collage_1@2x.png"></a></li>
+        <li><a href="https://dribbble.com/kendo"><img src="assets/work/collage_2@2x.png"></a></li>
+        <li><a href="https://dribbble.com/kendo"><img src="assets/work/collage_3@2x.png"></a></li>
+        <li><a href="https://dribbble.com/kendo"><img src="assets/work/collage_4@2x.png"></a></li>
+      </ul>
+
+      <!-- <a href="https://dribbble.com/kendo" class="bt">View More <i class="icon arrow-dark"></i></a> -->
     </section>
 
     <section class="home-process home-dark">
@@ -79,8 +105,8 @@
       <div class="section-inner">
         <h2>Blog.</h2>
 
-        <ul class="unstyled">
-          <li class="home-blog-entry">
+        <ul class="home-blog-list unstyled">
+          <!-- <li class="home-blog-entry">
             <time class="block">May 14, 2014</time>
             <a href="#" class="home-blog-entry-title">Fever: The app that maps out Madrid and New York nightlife</a>
             <p>We are basically the point where social networks meet entertainment and content.</p>
@@ -94,17 +120,17 @@
             <time class="block">May 14, 2014</time>
             <a href="#" class="home-blog-entry-title">Tips and Tools of Color Schemes Usage For Web Developers</a>
             <p>I have often witnessed an extraordinary design.</p>
-          </li>
+          </li> -->
         </ul>
 
-        <a href="#" class="bt bt-light">Read more <i class="icon arrow-light"></i></a>
+        <a href="https://medium.com/kendo-studio" class="bt bt-light">Read more <i class="icon arrow-light"></i></a>
       </div>
     </section>
 
     <section class="home-contact">
       <div class="section-inner">
-        <h2>Let’s Work Together</h2>
-        <p>Get Started Here</p>
+        <h2>Let’s work together.</h2>
+        <p>Get started here.</p>
 
         <form action="index.html" method="post" class="contact-form">
           <div class="cf">
@@ -119,9 +145,9 @@
               <i class="icon arrow-select"></i>
             </div>
 
-            <textarea name="description" rows="8" cols="30" placeholder="Tell me about your project briefly." class="contact-form-all" required></textarea>
+            <textarea name="description" rows="8" cols="30" placeholder="Tell us about your project briefly." class="contact-form-all" required></textarea>
           </div>
-          <span class="contact-form-availability block">Availability: <strong>Limited</strong></span>
+          <span class="contact-form-availability block">Availability: <strong>available</strong></span>
           <button type="submit" class="right">
             <span>Send</span>
             <div class="spinner">
@@ -140,9 +166,9 @@
 
     <footer>
       <ul class="social-links unstyled cf">
-        <li><a href="#"><i class="icon instagram"></i></a></li>
-        <li><a href="#"><i class="icon twitter"></i></a></li>
-        <li><a href="#"><i class="icon facebook"></i></a></li>
+        <li><a href="http://instagram.com/kendostudio"><i class="icon instagram"></i></a></li>
+        <li><a href="https://twitter.com/kendostudio"><i class="icon twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/kendostudio"><i class="icon facebook"></i></a></li>
       </ul>
     </footer>
 
@@ -153,12 +179,11 @@
         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
         e.src='//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','');ga('send','pageview');
+        ga('create','UA-52156208-1');ga('send','pageview');
     </script>
 
     <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/s.js"></script>
-
   </body>
 </html>

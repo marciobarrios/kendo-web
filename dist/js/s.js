@@ -83,3 +83,36 @@ if (!supportsSVG()) {
     });
   });
 })(window, jQuery);
+
+
+
+
+
+/**
+ * Get posts from Medium
+ */
+var feed = "https://medium.com/feed/lessons-learned";
+
+$.ajax({
+  url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q="+feed+"&num=3",
+  dataType: "jsonp"
+}).done(function(data){
+  var posts = data.responseData.feed.entries,
+      postsHTML = "";
+
+  for (var i=0, postsLength=posts.length; i < postsLength; i++){
+    var post    = posts[i],
+        date    = post.publishedDate.split(" ").slice(0,4).join(" "),
+        title   = post.title,
+        link    = post.link,
+        summary = $(post.content).find("p:first").html();
+
+    postsHTML += "<li class=home-blog-entry>\
+      <time class=block>"+ date +"</time>\
+      <a href="+ link +" class=home-blog-entry-title>"+ title +"</a>\
+      <p>"+ summary +"</p>\
+    </li>";
+  }
+
+  $(".home-blog-list").html(postsHTML);
+});

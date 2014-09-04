@@ -13,9 +13,9 @@ var dest = 'dist/';
 var paths = {
   html:    ['index.html'],
   fonts:   ['fonts/*'],
-  images:  ['img/*'],
+  images:  ['assets/work/*'],
   scripts: ['js/*'],
-  extras:  ['humans.txt', 'favicon.ico']
+  extras:  ['humans.txt', 'favicon*', 'apple-touch-icon*', 'chrome-touch-icon*']
 };
 
 
