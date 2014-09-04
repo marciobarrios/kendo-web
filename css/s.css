@@ -30,6 +30,7 @@
 * { padding: 0; margin: 0; box-sizing: border-box; }
 h1, h2, h3, h4 { font-weight: normal; }
 a { text-decoration: none; }
+img { max-width: 100%; height: auto; }
 
 
 
@@ -174,7 +175,7 @@ html {
   input, textarea, select, button {
     -webkit-appearance: none; /* 1 */
     font-family: "Maison Neue Book", helvetica, sans-serif;
-    padding: 1.5em 1em;
+    padding: 1.6em 1em 1.4em 1em;
     border: none;
     font-size: 18px;
     font-size: 1.8rem;
@@ -208,7 +209,7 @@ html {
     width: 100%;
     color: white;
     background: rgb(27,31,38);
-    padding: 1.3em;
+    padding: 1.4em 1.3em 1.1em;
     cursor: pointer;
   }
     .spinner {
@@ -295,7 +296,6 @@ html {
     }
     .work-collage img {
       width: 530px;
-      height: 530px;
     }
 
 
@@ -475,7 +475,7 @@ html {
   button {
     float: right;
     width: auto;
-    padding: 1.5em;
+    padding: 1.6em 1.5em 1.4em;
     width: 264px;
     width: 26.4rem;
   }

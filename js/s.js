@@ -91,7 +91,7 @@ if (!supportsSVG()) {
 /**
  * Get posts from Medium
  */
-var feed = "https://medium.com/feed/lessons-learned";
+var feed = "https://medium.com/feed/kendo-studio";
 
 $.ajax({
   url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q="+feed+"&num=3",
@@ -105,7 +105,7 @@ $.ajax({
         date    = post.publishedDate.split(" ").slice(0,4).join(" "),
         title   = post.title,
         link    = post.link,
-        summary = $(post.content).find("p:first").html();
+        summary = post.contentSnippet.replace("Continue reading on Medium »", "");
 
     postsHTML += "<li class=home-blog-entry>\
       <time class=block>"+ date +"</time>\
