@@ -137,6 +137,9 @@ html {
           font-size: 2.4rem;
           color: rgba(255,255,255,.5);
         }
+        header p {
+          color: #dbd165;
+        }
 
     h2 {
       color: rgb(43,46,46);

@@ -106,7 +106,6 @@ $.ajax({
         title   = post.title,
         link    = post.link,
         summary = post.contentSnippet.replace("Continue reading on Medium »", "");
-        //summary = $(post.content).find("p:first").html();
 
     postsHTML += "<li class=home-blog-entry>\
       <time class=block>"+ date +"</time>\
