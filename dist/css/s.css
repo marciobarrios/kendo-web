@@ -109,7 +109,7 @@ html {
     height: 100%; /* 1 */
   }
 
-  h1, h2, h3, h4 { font-family: "Maison Neue Demi", sans-serif; }
+  h1 { font-family: "Maison Neue Demi", sans-serif; }
 
   header {
     background: rgb(27,31,38);
@@ -375,7 +375,6 @@ html {
     padding-bottom: 3em;
     margin-bottom: 3em;
   }
-
   .home-blog-entry:after {
     content: "";
     position: absolute;
@@ -385,12 +384,15 @@ html {
     height: 1px;
     background: rgba(255,255,255,.05);
   }
-
-  .home-blog-entry-title {
-    display: block;
-    margin: 2em 0 1em;
-    color: white;
-  }
+    .home-blog-entry a {
+      color: #979797;
+      color: rgba(255,255,255,.5);
+    }
+      .home-blog-entry-title {
+        display: block;
+        margin: 1.35em 0 .67em;
+        color: white;
+      }
 
 
 /* Form contact */
@@ -507,8 +509,8 @@ html {
       margin-bottom: .2em;
     }
       h1 em {
-        font-size: 35px;
-        font-size: 3.5rem;
+        font-size: 29px;
+        font-size: 2.9rem;
       }
     h2 {
       font-size: 72px;

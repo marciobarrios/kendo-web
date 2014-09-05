@@ -108,9 +108,11 @@ $.ajax({
         summary = post.contentSnippet.replace("Continue reading on Medium »", "");
 
     postsHTML += "<li class=home-blog-entry>\
-      <time class=block>"+ date +"</time>\
-      <a href="+ link +" class=home-blog-entry-title>"+ title +"</a>\
-      <p>"+ summary +"</p>\
+      <a href="+ link +">\
+        <time class=block>"+ date +"</time>\
+        <h3 class=home-blog-entry-title>"+ title +"</h3>\
+        <p>"+ summary +"</p>\
+      </a>\
     </li>";
   }
 
