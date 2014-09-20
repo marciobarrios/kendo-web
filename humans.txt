@@ -4,12 +4,13 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  Adrian Mato -- Director & interaction designer -- @adrianmg
+  Danny Saltaren -- Cofounder & interaction designer -- @dsaltaren
 
 
 # THANKS
 
-    <name>
+    Marcio Barrios (@marciobarrios) for helping us building the html & css
 
 
 # TECHNOLOGY COLOPHON

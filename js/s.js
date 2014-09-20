@@ -28,10 +28,10 @@ if (!supportsSVG()) {
         $btText   = $bt.find("span"),
         btText    = $btText.text(),
         $spinner  = $bt.find(".spinner"),
-        name      = $("[name=name]").val(),
-        from      = $("[name=email]").val(),
-        time      = "<em>" + $("[name=timeline]").val() + "</em>",
-        text      = "<p>" + $("[name=description]").val() + "</p>";
+        name      = $formElem.filter("[name=name]").val(),
+        from      = $formElem.filter("[name=email]").val(),
+        time      = "<em>" + $formElem.filter("[name=timeline]").val() + "</em>",
+        text      = "<p>" + $formElem.filter("[name=description]").val() + "</p>";
 
     // Disabled form elements
     $formElem.attr("disabled", "disabled");
